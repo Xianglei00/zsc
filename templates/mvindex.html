@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>帮考网-选课目录</title>
+
+    <!-- Bootstrap -->
+    <link href="../static/course/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/course/css/course.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://s1.pstatp.com/cdn/expire-1-M/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/course/css/build.css">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+
+<body>
+<!-- 页眉start -->
+<script src="../static/course/js/common.js"></script>
+<!-- 页眉end -->
+<!-- 内容start -->
+<div class="center">
+    <!-- 面板制作 -->
+
+    <!-- 图片模板制作 -->
+    <div class="tumo">
+        <div class="row">
+            {% for i in name %}
+                <div class="mo col-md-3 col-sm-6 col-xs-6 col-md-1-5">
+                    <a href="/detail?id={{ i["id"] }}&obj={{ obj }}" class="thumbnail">
+                        <p size="5%">{{ i.get("name") }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../static/course/js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../static/course/js/bootstrap.min.js"></script>
+<script src="../static/course/js/course.js"></script>
+<script type="text/javascript">
+    function changeState(el) {
+        if (el.readOnly) el.checked = el.readOnly = false;
+        else if (!el.checked) el.readOnly = el.indeterminate = true;
+    }
+</script>
+</body>
+</html>

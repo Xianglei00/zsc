@@ -1,0 +1,319 @@
+﻿.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgba(239, 245, 252, 0.4);
+}
+
+.logo {
+    margin: 0 30px;
+    position: relative;
+    top: -32%;
+}
+
+.my-right a {
+    font-size: 16px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.my-right a:hover {
+    color: #337ab7;
+}
+
+.navbar-nav li {
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 769px) {
+    .carousel-caption {
+        top: 20%;
+        font-size: 12px;
+    }
+    .carousel-indicators li {
+        width: 30px;
+        height: 2px;
+    }
+    .carousel-indicators .active {
+        width: 30px;
+        height: 2px;
+        margin: 1px;
+        border-color: brown;
+    }
+    .carousel-caption h3 {
+        font-size: 3em;
+    }
+    .carousel-caption p {
+        padding-top: 2em;
+        line-height: 2em;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:1498px) {
+    .my-h2 span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:989px) {
+    .my-center {
+        text-align: center;
+    }
+  .col-md-5  .rowE .warp-pic-list {
+        position: relative;
+    width:100%;
+    height: 138px;
+    overflow: hidden;
+    background: #F7F7F7;
+    }
+    .col-md-5  .rowE .count li{
+        margin-right: 20px;
+    width: 186px;
+    height: 180px;
+    }
+    .col-md-5  .rowE .count .img_wrap{
+        width: 220px;
+    height: 109px;
+    }
+
+    .col-md-5  .rowE .count .img_wrap img {
+    width: 180px;
+
+}
+    .col-md-5  .rowE .btn{
+        display: block;
+    height: 55px;
+    position: absolute;
+    top: 33px;
+
+    width: 35px;
+    z-index: 200;
+    cursor: pointer;
+    }
+}
+/* .my-container-fluid{
+    width: 96%;
+    margin: auto;
+} */
+.my-center {
+    margin-bottom: 30px;
+}
+
+.center {
+ padding: 0 15px;
+    background-color: white;
+    width: 94%;
+    margin: 50px auto 0;
+}
+
+.center2 {
+    background-color: white;
+    width: 94%;
+    margin: 20px auto 0;
+}
+
+.my-p {
+    font-size: 2.5em;
+    font-weight:bold;
+}
+
+.my-h2 {
+    height: 50px;
+    background-color: rgb(247, 117, 11);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.my-jg {
+    background-color: rgba(172, 169, 169, 0.165);
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.my-le {
+    float: left;
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.my-r {
+    margin: 10px 0;
+}
+
+.my-r span:first-of-type {
+    font-size: 20px;
+    color: rgb(184, 28, 28);
+    margin: 0 10px 0 0;
+}
+
+.my-r span:last-of-type {
+    font-size: 20px;
+    color: rgba(131, 129, 129, 0.767);
+}
+
+.my-r li {
+    list-style: none;
+}
+
+.my-r li svg {
+    font-size: 20px;
+}
+
+.my-sapn {
+    display: inline-block;
+    font-size: 14px;
+    color: slategray;
+}
+
+#my-ul li {
+    font-size: 1.2em;
+    /* padding: 5px 10px; */
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 3px;
+}
+
+#my-ul {
+    margin-left: 75px;
+}
+
+.my-zxl .btn:first-of-type {
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size:1.3em;
+    line-height: 31px;
+    border-radius: 8px;
+    background-color: #00a4ff;
+    margin-right: 3%;
+    margin-left: 10px;
+    border: 0px;
+}
+
+.my-zxl .btn:first-of-type:hover {
+    background-color: rgba(104, 170, 255, 0.8)
+}
+
+.my-zxl .btn:last-of-type {
+    width: 150px;
+    height: 40px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    font-size: 1.3em;
+    line-height: 31px;
+    border-radius: 8px;
+}
+
+.my-zxl .btn:last-of-type:hover {
+    background-color: rgba(194, 198, 201, 0.3)
+}
+
+
+/* 选课模板 */
+
+#my-band {
+    border-bottom: 2px solid  rgba(239, 245, 252, 0.4);
+}
+
+#my-band div {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+#my-left1 {
+    font-size: 1.3em;
+    color: #00a4ff;
+    border-bottom: 0.5px solid #00a4ff;
+}
+
+#my-right1 {
+    font-size: 1.3em;
+    color: rgb(21, 22, 22);
+}
+
+#my-right2 {
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+
+}
+#my-left2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#my-right2 img{
+    width: 80%;
+}
+#my-left2 img{
+    width: 80%;
+}
+/* 播放按钮图标 */
+
+/* 尾部 */
+
+footer {
+    padding: 20px;
+    background-color: rgba(8, 8, 8, 0.664);
+    text-align: center;
+    color: #fff;
+}
+
+.foot {
+    text-align: center;
+    color: brown;
+}
+
+
+/* 复选框制作 */
+
+.my-r input {
+    display: none
+}
+
+.my-r label {
+    border: 1px solid #CCC;
+    color: #666;
+    padding: 2px 12px 2px 12px;
+    line-height: 28px;
+    min-width: 80px;
+    text-align: center;
+    float: left;
+    margin: 2px;
+    border-radius: 4px
+}
+
+.my-r input:checked+label {
+    background: url(../../images/ico_checkon.svg) no-repeat right bottom;
+    border: 1px solid #00a4ff;
+    background-size: 21px 21px;
+    color: #00a4ff;
+}
+
+.my-r input:disabled+label {
+    opacity: 0.7;
+}

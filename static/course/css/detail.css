@@ -1,0 +1,354 @@
+.zhongxia {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-tabs > li > a {
+    border: none;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border: none;
+    border-bottom: 2px solid #8A2BE2;
+    color: #8A2BE2;
+}
+
+.rtpwz {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.rtxwz {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #d1d1d1;
+}
+
+.kjxz {
+    background-color: #2986d6;
+    margin-bottom: 10px;
+}
+
+.anliu {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: white;
+}
+
+.anliu:hover {
+    color: #fff;
+    background-color: #2d9eff;
+    border-color: #2d9eff;
+}
+
+.aa1 {
+    float: left;
+}
+
+.bb1 {
+    float: left;
+    margin-right: 30px;
+}
+
+.cc1 {
+    float: right;
+    padding-top: 2px;
+    color: white;
+}
+
+.dd1 {
+    float: right;
+    color: white;
+}
+
+.ee1 {
+    margin-top: 10px;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 19px solid #d1d1d1;
+    margin-left: 70px;
+}
+
+
+.bgc {
+    margin: 50px auto 0;
+    background-color: black;
+}
+
+.center {
+    margin: 0 auto 0;
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* 选课模板 */
+
+.center2 {
+    background-color: white;
+    width: 94%;
+    margin: 20px auto 0;
+}
+
+#my-band {
+    border-bottom: 2px solid rgba(203, 203, 206, 0.4);
+}
+
+#my-t {
+    font-size: 1.3em;
+}
+
+#my-n {
+    margin-top: 10px;
+}
+
+#my-n span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+#my-tc {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+#my-nr {
+    border-radius: 8px;
+    margin: 0 0 10px 0;
+    padding: 18px 10px;
+    background-color: rgba(207, 209, 211, 0.4);
+}
+
+#my-sjx {
+    margin-left: 32px;
+    margin-top: 10px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid rgba(207, 209, 211, 0.4);
+}
+
+
+#my-band div {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+#my-left1 {
+    font-size: 1.3em;
+    color: #00a4ff;
+    border-bottom: 0.5px solid #00a4ff;
+}
+
+#my-right1 {
+    font-size: 1.3em;
+    color: rgb(21, 22, 22);
+}
+
+#my-right2 {
+    margin-top: 10px;
+    display: none;
+}
+
+#my-left2 {
+    margin-top: 10px;
+}
+
+
+.foot {
+    text-align: center;
+}
+
+#dv {
+    width: 20%;
+    border: 1px solid black;
+    background-color: rgb(20, 25, 30);
+}
+
+#btn {
+    background-color: rgb(55, 60, 64);
+    border: none;
+    color: rgb(202, 202, 202);
+    padding-top: 20px;
+    padding-left: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn1 {
+    background-color: rgb(55, 60, 64, 0);
+    border: none;
+    color: rgb(202, 202, 202);
+    padding-top: 15px;
+    margin-left: 85%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.yc {
+    position: relative;
+}
+
+.son {
+    position: absolute;
+    top: 40%;
+    right: 17.2%;
+    color: rgb(202, 202, 202);
+}
+
+.son1 {
+    position: absolute;
+    top: 0px;
+    right: 13.5%;
+    bottom: 50px;
+}
+
+.aa {
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+.bb {
+    position: absolute;
+    margin-top: 15px;
+    color: rgb(202, 202, 202);
+    margin-left: 20px;
+}
+
+.my-div {
+    width: 100%;
+    height: 95%;
+    padding-top: 10px;
+    overflow-x: auto;
+    color: rgb(202, 202, 202);
+}
+
+.my-div ul {
+    list-style: none;
+}
+
+.con1 {
+    width: 313px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#help-left {
+    width: 100%;
+    height: 100%;
+    font-family: 'microsoft YaHei';
+    float: left;
+    padding-left: 20px;
+    overflow: auto;
+}
+
+.menu summary {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/*可用图片或字符,如果使用图片，请把content的值设置成空字符*/
+
+.menu summary:before {
+    content: "+";
+    /*background: url(../Images/right.png) no-repeat center center;*/
+    /*收起时的图片*/
+    /*vertical-align: middle;*/
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu[open] summary:before {
+    content: "-";
+    /*background: url(../Images/down.png) no-repeat center center;*/
+    /*展开时的图片*/
+}
+
+.menu ul {
+    padding: 10px 0;
+}
+
+.menu ul li {
+    list-style: none;
+    text-indent: 25px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu ul li a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+
+
+
+
+
+
+

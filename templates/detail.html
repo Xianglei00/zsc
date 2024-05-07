@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!--本页面-->
+    <link href="../static/course/css/detail.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!--zhongshang-->
+<div class="bgc">
+    <div class="center">
+        <div style="background-color: #292929;padding-top: 18px;">
+
+            <div style="color:white;height: 34px;padding-left: 14%;">首页>
+                <div id='videotitle' class="hidden-xs" style="width:auto;margin-left: 3%;margin-top: -20px;"></div>
+                <div id='target' class="hidden-xs" style="width:auto;margin-left: 14%;margin-top: -20px;"></div>
+            </div>
+
+            <div class="yc" style="padding-left: 14%;padding-bottom: 18px;">
+                <video id="media" src="{{ url }}" controls="" autobuffer=""
+                       class="img-responsive"
+                       style="width: 84%"></video>
+
+                <div class="son  hidden-xs"><span class="glyphicon glyphicon-menu-hamburger aa"></span><input
+                        type="button" value="目录" id="btn"/></div>
+                <!--<input type="button" value="显示" id="btn1"/>-->
+                <div class="son1  hidden-xs" id="dv" style="display: none;"><span class="bb">章节目录</span><input
+                        type="button" value="收起" id="btn1"/>
+
+                    <div class="my-div">
+                        <div class="con1">
+                            <section id="help-left">
+                                {% for data in object_data %}
+                                    <details class="menu">
+                                        <summary>
+                                            <a href='javascript:videotitle("{{ data.get("name") }}","videotitle")'><span
+                                                    class="glyphicon glyphicon-th-list"><strong>{{ data.get("name") }}</strong></span></a>
+                                        </summary>
+                                        {% for id_data in data.get("data") %}
+                                            <ul>
+                                                <li>
+                                                    <a href='javascript:showContent("{{ id_data.get("name") }}","target")'
+                                                       onclick="doIt('{{ data.get("name") }}','{{ id_data.get("id") }}', {{ object_data }})"><span
+                                                            class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;{{ id_data.get("name") }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        {% endfor %}
+                                    </details>
+                                {% endfor %}
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../static/course/js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../static/course/js/bootstrap.min.js"></script>
+<!--侧边栏-->
+
+<script>
+    function my(id) {
+        return document.getElementById(id);
+    }
+
+    my("btn").onclick = function () {
+        if (this.value === "目录") {
+            my("dv").style.display = "block";
+
+        }
+    };
+    my("btn1").onclick = function () {
+        if (this.value === "收起") {
+            my("dv").style.display = "none";
+        }
+    };
+
+    function showContent(content, target) {
+        document.getElementById(target).innerHTML = content;
+    }
+
+    function doIt(objName, objId, object_data) {
+        let objName_en
+        let index
+        switch (objName) {
+            case "数学":
+                objName_en = "math"
+                index = 0
+                break;
+            case "英语":
+                objName_en = "english"
+                index = 1
+                break
+            default:
+                objName_en = "computer"
+                index = 2
+        }
+        const videoSrc = (object_data[index].data)[objId].url
+        {#console.log(object_data)#}
+        {#console.log(videoSrc)#}
+        {#console.log(objId);#}
+        document.getElementById("media").src = videoSrc;
+        $('#media').get(0).play()
+    }
+
+    function videotitle(content, videotitle) {
+        document.getElementById(videotitle).innerHTML = content;
+    }
+
+    function dy(m) {
+        lis[m].onmouseover = function () {
+            lis[m].querySelectorAll('.my-bo')[0].style.display = 'block';
+            lis[m].querySelectorAll('.my-bo')[1].style.display = 'block';
+        };
+        lis[m].onmouseout = function () {
+            lis[m].querySelectorAll('.my-bo')[0].style.display = 'none';
+            lis[m].querySelectorAll('.my-bo')[1].style.display = 'none';
+        }
+    }
+</script>
+</body>
+
+</html>

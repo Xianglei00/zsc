@@ -1,0 +1,45 @@
+
+
+.centent{
+	width: 90%;
+	margin:0 auto;
+	margin-top: 50px;
+}
+
+.zhongshang{
+	height: 75px;
+}
+.zhongshang .diyiceng{
+	padding-top:30px;
+}
+
+
+li{
+	display: inline-block;
+	margin-left: 25px;
+}
+ul{
+	margin-top:-20px;
+	margin-bottom: 0px;
+}
+
+.fwenzi{
+font-size: 18px;
+padding-top: 6px;
+padding-bottom: 6px;
+color: black;
+}
+.swenzi{
+font-size: 18px;
+color: red;
+}
+.jjjj ul{
+	margin-top:-20px;
+	margin-bottom: 0px;
+}
+.jjjj li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+
